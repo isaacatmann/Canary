@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.poc.evilmaid.canary</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/local/bin/evilmaid_canary.sh</string>
+    </array>
+    <!-- Fires once at load to prove post-boot execution, then hourly to
+         demonstrate recurring persistence. Payload is a local log write only. -->
+    <key>RunAtLoad</key>
+    <true/>
+    <key>StartInterval</key>
+    <integer>3600</integer>
+    <key>StandardErrorPath</key>
+    <string>/Library/Logs/EvilMaidPoC/canary.err</string>
+</dict>
+</plist>
