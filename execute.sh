@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 # 0. In recovery: connect Wi-Fi from the menu bar first. Utilities > Terminal.
 
 # 1. Find and mount the Data volume
