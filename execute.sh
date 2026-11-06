@@ -4,7 +4,7 @@
 # 1. Find and mount the Data volume
 diskutil list
 diskutil mount "Macintosh HD - Data"        # use the exact name from diskutil list
-DATA="/Volumes/Macintosh HD - Data"          # adjust if your name differs
+DATA="Data"          # adjust if your name differs
 
 # 2. Confirm it's the real system Data volume before writing anything
 ls "$DATA"                                    # expect Library, Users, private, usr, etc.
