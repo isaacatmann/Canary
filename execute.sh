@@ -1,7 +1,8 @@
 #!/bin/bash
 # 0. In recovery: connect Wi-Fi from the menu bar first. Utilities > Terminal.
+# Run remotely in recovery: bash <(curl -s https://raw.githubusercontent.com/isaacatmann/Canary/refs/heads/main/execute.sh)
 
-# 1. Find and mount the Data volume
+# 1. Find and mount the Data volume (it's usually mounted by default)
 diskutil list
 diskutil mount "Data"        # use the exact name from diskutil list
 DATA="/Volumes/Data"          # adjust if your name differs
