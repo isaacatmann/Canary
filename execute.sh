@@ -30,5 +30,4 @@ ls -le "$DATA/usr/local/bin/evilmaid_canary.sh" "$DATA/Library/LaunchDaemons/com
 # 6. Exit recovery, boot macOS normally. No launchctl load: launchd auto-loads
 #    /Library/LaunchDaemons at boot and RunAtLoad fires.
 
-# 7. After first boot + login:
-cat /Library/Logs/EvilMaidPoC/canary.log
+# 7. After first boot + login: cat /Library/Logs/EvilMaidPoC/canary.log
